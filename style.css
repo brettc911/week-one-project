@@ -35,7 +35,6 @@ Input Border Bottom (Focus): #967343
 
 body{
   background-color: black;
-
 }
 
 .wrapper{
@@ -52,7 +51,6 @@ header{
   align-items: center;
   padding: .55em;
   font-family: 'Roboto', sans-serif;
-
 }
 
 header a{
@@ -79,28 +77,50 @@ header a:hover{
   width: 11.5%;
 }
 
-/*===============  HERO TITLE   ===============*/
+/*==========    FOOTER    ===========*/
 
-#hero-title{
+
+footer{
+  font-family: 'Merriweather', serif;
+  height: 85px;
+  background-color: #2B2F26;
+  color: #F2F1E8;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+
+}
+
+/*===========  HERO TITLE   =============*/
+
+.hero-title{
   font-family: 'Merriweather', serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 200px;
   line-height: 60px;
+  height: 200px;
 }
 
-#hero-title h1{
+.hero-title h1{
   font-size: 57px;
 }
 
-#hero-title h2{
+.hero-title h2{
   font-size: 33px;
   font-weight: 100;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*======  BEGIN HOMEPAGE STYLING  =======*/
 
+
+/*=============  HERO-TITLE  ============*/
+
+/*#hero-title-home{
+  height: 200px;*/
+}
 /*===============  PHOTOS   ===============*/
 
 #photos{
@@ -199,17 +219,33 @@ width: 18.8%
   width: 18.8%;
 }
 
+/*=======    END HOMEPAGE STYLING    ======*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-/*==========    FOOTER    ===========*/
+
+/*                ------                   */
 
 
-footer{
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*======  BEGIN ABOUT STYLING  =======*/
+
+
+/*=============  HERO-TITLE  ============*/
+
+#hero-title-about{
+  height: 150px;
+}
+
+
+.main-content{
+  margin: 0 auto;
+  width: 70%;
   font-family: 'Merriweather', serif;
-  height: 85px;
-  background-color: #2B2F26;
-  color: #F2F1E8;
-  display: flex;
-  align-items: center;
-  padding-left: 30px;
+  line-height: 2em;
+}
 
+#intro img{
+  width: 17%;
+  float: left;
+  margin: 0 25px 25px 0;
 }
