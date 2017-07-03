@@ -249,3 +249,16 @@ width: 18.8%
   float: left;
   margin: 0 25px 25px 0;
 }
+
+
+#hero-title-about{
+  height: 150px;
+}
+
+#quote{
+  font-style: italic;
+  font-weight: lighter;
+  margin: 25px 0;
+  padding-left: 25px;
+  border-left: solid 2px #968772;
+}
