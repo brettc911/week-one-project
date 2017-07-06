@@ -29,6 +29,12 @@ Input Border Bottom (Focus): #967343
 
 /*========== BEGIN CSS STYLING============*/
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
 
 
 /*===============  HEADER   ===============*/
@@ -40,17 +46,24 @@ body{
 .wrapper{
   background-color: #F2F1E8;
   margin: auto;
-  width: 75%;
-
+  width: 69.4%;
 }
+
+.fixed{
+  position: fixed;
+  top: 0;
+  width: 69.4%;
+}
+
 header{
   margin: auto;
   background-color: #FFFFFF;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: .55em;
   font-family: 'Roboto', sans-serif;
+  width: 100%;
+  padding: .55em 0;
 }
 
 header a{
@@ -60,7 +73,11 @@ header a{
 }
 
 header a:hover{
-  color: #967343;
+  color: #CD5D67;
+}
+
+.active{
+  color: #968772;
 }
 
 .header-boxes{
@@ -101,18 +118,20 @@ footer{
   align-items: center;
   line-height: 60px;
   height: 200px;
+  padding-top: 2.75em;
 }
 
 .hero-title h1{
-  font-size: 57px;
+  font-size: 52px;
+  margin-top: 20px;
 }
 
 .hero-title h2{
-  font-size: 33px;
+  font-size: 30px;
   font-weight: 100;
 }
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*======  BEGIN HOMEPAGE STYLING  =======*/
 
 
@@ -139,14 +158,13 @@ footer{
   display: flex;
   align-items: flex-end;
   color: #F2F1E8;
-
 }
 
 .product-text h3{
   background-color: #2B2F26;
   padding: 14px;
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /*=========   ROW 1  ==========*/
@@ -174,8 +192,8 @@ footer{
 
 #row1-3{
 background-image: url(images/product-3.jpg);
-background-repeat:no-repeat;
-background-size:cover;
+background-repeat: no-repeat;
+background-size: cover;
 background-position:left;
 width: 18.8%
 }
@@ -233,19 +251,194 @@ width: 18.8%
 /*=============  HERO-TITLE  ============*/
 
 #hero-title-about{
-  height: 150px;
+  height: 138px;
+  margin-bottom: 10px;
 }
+
+/*=============  MAIN CONTENT  ============*/
+/*=============  Intro and History ============*/
 
 
 .main-content{
   margin: 0 auto;
-  width: 70%;
+  width: 68%;
   font-family: 'Merriweather', serif;
   line-height: 2em;
+  font-size: 15px;
+}
+
+.main-content h5{
+  font-size: 22px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+.main-content a{
+  color: #968772;
+}
+
+.main-content a:hover{
+  color: #967343;
 }
 
 #intro img{
-  width: 17%;
+  width: 18.5%;
   float: left;
   margin: 0 25px 25px 0;
+}
+
+#quote{
+  font-style: italic;
+  font-weight: lighter;
+  margin: 25px 0;
+  padding-left: 25px;
+  border-left: solid 2px #968772;
+}
+
+/*=============  MAIN CONTENT  ============*/
+/*=============  Facilities ============*/
+
+
+#facilities-container{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+#facilities-left{
+  width: 80%;
+  padding-right: 30px;
+}
+
+#facilities-right{
+  margin-top: 7.5%;
+  font-size: 10px;
+  width: 20%;
+  line-height: 20px;
+  color: #2B2F26;
+}
+
+#facilities-right img{
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+
+/*=============  MIDDLE BANNER ============*/
+
+
+#middle-banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 45px auto;
+  color: #ffffff;
+  background: url(images/background-3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 250px;
+  font-family: 'Merriweather', serif;
+  font-size: 50px;
+}
+
+
+/*=============  TABLE  ============*/
+
+
+
+table{
+  border-collapse: collapse;
+  width: 80%;
+  margin-bottom: 45px;
+}
+
+td{
+  border: solid 1px #131511;
+  text-align: left;
+  padding: 10px;
+}
+
+.table-background{
+  background-color: rgb(241, 234, 221);
+}
+
+.table-center{
+  text-align: center;
+}
+
+/*=======    END  ABOUT STYLING    ======*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/*                ------                   */
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*======  BEGIN NEWSLETTER STYLING  =======*/
+
+
+
+/*=============  BACKGROUND  ============*/
+
+#background{
+  background-image: url(images/background-2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 820px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*=============  SIGNUP BOX  ============*/
+
+
+#signup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 30px;
+  line-height: 60px;
+}
+
+#signup h1{
+  font-size: 33px;
+}
+
+#signup h2{
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+#signup input{
+  width: 100%;
+  border-style: none;
+  border-bottom: 2px solid #968772;
+  font-size: 18px;
+  color: #968772;
+  margin-bottom: 35px;
+}
+
+#signup input:focus{
+  border-bottom: 2px solid #967343;
+
+}
+
+/*=============  BUTTON  ============*/
+
+
+button{
+  background-color: #968772;
+  padding: 20px 30px;
+  color: #F2F1E8;
+  border: none;
+  font-size: 18px;
+}
+
+button:hover{
+  background-color: #967343;
+  color: #ffffff;
 }

@@ -2,11 +2,39 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="meyers-reset.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700|Roboto:300,300i,400,400i" rel="stylesheet">
-    <link rel="stylesheet" href="master.css">
-    <title>Bent Creek Ceramics - News Letter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/bent-creek-logo-coral.png">
+    <title>Bent Creek Ceramics</title>
   </head>
   <body>
+    <div class="wrapper">
+    <header class="fixed">
+      <div class="header-boxes" id="logo">
+        <img src="images/bent-creek-logo.png" alt="logo">
+      </div>
+      <div class="header-boxes" id="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="newsletter.html" class="active">Newsletter</a>
+      </div>
+      <div class="header-boxes" id="right">
+      </div>
+    </header>
 
+    <div id="background">
+        <form id="signup"class="" action="index.html" method="post">
+          <h1>Signup for Our Weekly Newsletter</h1>
+          <h2>Stay up to date with events, activities, news and specials</h2>
+          <input id="nameInput"type="text" name="name" value="Name">
+          <input id="emailInput"type="email" name="email" value="Email">
+          <button id="signupButton"type="button" name="button">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+      <h1>Copyright 2017, Bent Creek Ceramics</h1>
+    </footer>
   </body>
 </html>
